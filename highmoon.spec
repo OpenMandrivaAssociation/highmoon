@@ -1,5 +1,5 @@
 %define	name	highmoon
-%define	version	1.2.3
+%define	version	1.2.4
 %define	release	%mkrel	1
 %define	Summary	Artillery/Worms-like Game in Open Space
 
