@@ -13,6 +13,7 @@ URL:		http://highmoon.gerdsmeier.net/
 Group:		Games/Strategy
 License:	GPL
 BuildRequires:	SDL-devel SDL_image-devel ImageMagick
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 HighMoon is an Artillery/Worms-like duel game in which two spaceships fight
