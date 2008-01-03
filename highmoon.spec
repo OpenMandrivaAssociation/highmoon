@@ -43,14 +43,15 @@ cd %{_gamesdatadir}/%{name}
 EOF
 chmod 755 $RPM_BUILD_ROOT%{_gamesbindir}/highmoon
 
-install -d $RPM_BUILD_ROOT%{_menudir}
-cat <<EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}):command="%{_gamesbindir}/%{name}" \
-		icon=%{name}.png \
-		needs="x11" \
-		section="More Applications/Games/Strategy" \
-		title="HighMoon"\
-		longtitle="%{Summary}"
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Type=Application
+Exec=%{_gamesbindir}/%{name}
+Icon=%{name}
+Categories=Game;StrategyGame;
+Name=HighMoon
+Comment=%{Summary}
 EOF
 
 install -d $RPM_BUILD_ROOT{%{_iconsdir},%{_miconsdir},%{_liconsdir}}
@@ -81,5 +82,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_miconsdir}/%{name}.png
 %{_iconsdir}/%{name}.png
 %{_liconsdir}/%{name}.png
-%{_menudir}/%{name}
+%{_datadir}/applications/mandriva-%{name}.desktop
 
