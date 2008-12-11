@@ -12,7 +12,7 @@ Patch1:		highmoon-1.2.3-mdkconf.patch.bz2
 URL:		http://highmoon.gerdsmeier.net/
 Group:		Games/Strategy
 License:	GPL
-BuildRequires:	SDL-devel SDL_image-devel ImageMagick
+BuildRequires:	SDL-devel SDL_image-devel imagemagick
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
