@@ -1,6 +1,6 @@
 %define	name	highmoon
 %define	version	1.2.4
-%define	release	%mkrel	3
+%define	release	%mkrel	4
 %define	Summary	Artillery/Worms-like Game in Open Space
 
 Name:		%{name}
@@ -10,8 +10,8 @@ Summary:	%{Summary}
 Source0:	http://highmoon.gerdsmeier.net/%{name}-%{version}.tar.gz
 Patch1:		highmoon-1.2.3-mdkconf.patch.bz2
 URL:		http://highmoon.gerdsmeier.net/
-Group:		Games/Strategy
-License:	GPL
+Group:		Games/Arcade
+License:	GPLv2
 BuildRequires:	SDL-devel SDL_image-devel imagemagick
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
@@ -49,7 +49,7 @@ cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
 Type=Application
 Exec=%{_gamesbindir}/%{name}
 Icon=%{name}
-Categories=Game;StrategyGame;
+Categories=Game;ArcadeGame;X-MandrivaLinux-MoreApplications-Games-Arcade;
 Name=HighMoon
 Comment=%{Summary}
 EOF
