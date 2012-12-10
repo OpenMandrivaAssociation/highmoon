@@ -1,2 +1,3 @@
 sources:
-  "highmoon-1.2.4.tar.gz:"	5b5a712795000851593fee1515c9ee4a0efab285
+  "highmoon-1.2.3-mdkconf.patch.bz2": ec0e54e64e2a9e9e8e4ec94bf97d359bc905d200
+  "highmoon-1.2.4.tar.gz": 5b5a712795000851593fee1515c9ee4a0efab285

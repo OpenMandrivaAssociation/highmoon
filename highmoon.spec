@@ -88,3 +88,36 @@ rm -rf $RPM_BUILD_ROOT
 %{_liconsdir}/%{name}.png
 %{_datadir}/applications/mandriva-%{name}.desktop
 
+
+
+%changelog
+* Wed May 13 2009 Jérôme Brenier <incubusss@mandriva.org> 1.2.4-4mdv2010.0
++ Revision: 375064
+- group/menu category fixed (#49515)
+- license fixed (GPLv2)
+
+  + Oden Eriksson <oeriksson@mandriva.com>
+    - lowercase ImageMagick
+
+* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 1.2.4-3mdv2009.0
++ Revision: 246860
+- rebuild
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+* Thu Jan 03 2008 Thierry Vignaud <tv@mandriva.org> 1.2.4-1mdv2008.1
++ Revision: 141863
+- auto-convert XDG menu entry
+- kill re-definition of %%buildroot on Pixel's request
+- import highmoon
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Jérôme Soyer <saispo@mandriva.org>
+    - New release
+
+
+* Thu Feb 16 2006 Per Øyvind Karlsen <pkarlsen@mandriva.com> 1.2.3-1mdk
+- initial release based on suse package
