@@ -9,7 +9,7 @@ Release:	%{release}
 Summary:	%{Summary}
 Source0:	http://highmoon.gerdsmeier.net/%{name}-%{version}.tar.gz
 Patch1:		highmoon-1.2.3-mdkconf.patch.bz2
-URL:		http://highmoon.gerdsmeier.net/
+URL:		https://highmoon.gerdsmeier.net/
 Group:		Games/Arcade
 License:	GPLv2
 BuildRequires:	SDL-devel SDL_image-devel imagemagick
