@@ -12,6 +12,7 @@ Patch1:		highmoon-1.2.3-mdkconf.patch.bz2
 URL:		https://highmoon.gerdsmeier.net/
 Group:		Games/Arcade
 License:	GPLv2
+BuildRequires:	make
 BuildRequires:	SDL-devel SDL_image-devel imagemagick
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
